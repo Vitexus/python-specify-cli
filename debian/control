@@ -1,0 +1,34 @@
+Source: python-specify-cli
+Section: python
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               pybuild-plugin-pyproject,
+               python3-all,
+               python3-hatchling
+Standards-Version: 4.7.0
+Homepage: https://github.com/github/spec-kit
+Vcs-Git: https://github.com/Vitexus/python-specify-cli.git
+Vcs-Browser: https://github.com/Vitexus/python-specify-cli
+Rules-Requires-Root: no
+
+Package: python3-specify-cli
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-click,
+         python3-json5,
+         python3-mcp,
+         python3-packaging,
+         python3-pathspec,
+         python3-pydantic,
+         python3-readchar,
+         python3-rich,
+         python3-typer,
+         python3-yaml
+Description: Specify CLI - bootstrap projects for Spec-Driven Development
+ Specify CLI is part of GitHub Spec Kit. It sets up the directory structure,
+ templates and AI coding agent integrations needed to practice Spec-Driven
+ Development (SDD), where clear specifications are written before
+ implementation.
